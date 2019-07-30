@@ -1,5 +1,8 @@
 FROM python:3-stretch
 RUN apt-get update && apt-get upgrade -y && apt-get install -y \
+    fonts-liberation libappindicator3-1 libasound2 libatk-bridge2.0-0 \
+    libatspi2.0-0 libgtk-3-0 libnspr4 libnss3 libxtst6 lsb-release \
+    xdg-utils \
     curl unzip wget \
     xvfb
 
