@@ -1,6 +1,5 @@
 FROM python:3-stretch
-RUN apt-get update && apt-get upgrade -y \
-    apt-get install -y \
+RUN apt-get update && apt-get upgrade -y && apt-get install -y \
     curl unzip wget \
     xvfb
 
