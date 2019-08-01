@@ -1,8 +1,8 @@
 # Alphine + Python + Selenium + Firefox + Xvfb
 FROM python:3.7.4-alpine3.10
 
-RUN echo "http://dl-4.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories && \
-    echo "http://dl-4.aplinelinux.org/alpine/edge/community" >> /etc/apk/repositories
+# RUN echo "http://dl-4.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories && \
+#     echo "http://dl-4.aplinelinux.org/alpine/edge/community" >> /etc/apk/repositories
 
 RUN apk update && \
     apk add curl unzip dbus-x11 ttf-freefont \
