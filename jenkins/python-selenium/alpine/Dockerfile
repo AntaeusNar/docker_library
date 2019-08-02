@@ -6,7 +6,7 @@ FROM python:3.7.4-alpine3.10
 
 RUN apk update && \
     apk add curl unzip dbus-x11 ttf-freefont \
-            firefox-esr xvfb grep && \
+            firefox-esr xvfb xdpyinfo grep && \
     pip install selenium
 
 RUN GECKODRIVER_VERSION=`curl https://github.com/mozilla/geckodriver/releases/latest | grep -Po 'v[0-9]+.[0-9]+.[0-9]+'` && \
