@@ -1,3 +1,10 @@
 FROM selenium/standalone-firefox-debug
-RUN apt-get update && apt-get upgrade -y && apt-get install -y \
-  python pip
+
+USER root
+
+RUN apt-get update -qqy \
+  && apt-get -qqy install \
+  python pip \
+  && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
+
+USER seluser
