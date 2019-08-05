@@ -2,8 +2,8 @@ FROM selenium/standalone-firefox-debug
 
 USER root
 
-RUN apt-get update -qqy \
-  && apt-get -qqy install \
+RUN sudo apt-get update -qqy \
+  && sudo apt-get -qqy install \
   python pip \
   && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
 
