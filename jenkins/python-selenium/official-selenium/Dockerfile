@@ -4,7 +4,7 @@ USER root
 
 RUN sudo apt-get update -qqy \
   && sudo apt-get -qqy install \
-  python pip3 \
+  python3-pip3 \
   && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
 
 USER seluser
